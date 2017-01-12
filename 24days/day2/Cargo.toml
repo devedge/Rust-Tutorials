@@ -4,3 +4,4 @@ version = "0.1.0"
 authors = ["devedge <devedge@outlook.com>"]
 
 [dependencies]
+primal = "^0.2.3"
