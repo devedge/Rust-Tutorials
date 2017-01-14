@@ -4,3 +4,5 @@ version = "0.1.0"
 authors = ["devedge <devedge@outlook.com>"]
 
 [dependencies]
+csv = "0.15.0"
+rustc-serialize = "0.3.22"
