@@ -1,0 +1,9 @@
+[package]
+name = "day4"
+version = "0.1.0"
+authors = ["devedge <devedge@outlook.com>"]
+
+[dependencies]
+docopt = "~0.6.78"
+docopt_macros = "~0.6.80"
+rustc-serialize = "0.3.22"
