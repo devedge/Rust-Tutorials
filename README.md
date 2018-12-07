@@ -1,2 +1,2 @@
 # Rust-Tutorials
-Archive of tutorials done in rust
+Archive of tutorials/scratchwork done in rust
