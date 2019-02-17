@@ -9,16 +9,24 @@ enum Message {
 fn main() {
     let msg = Message::ChangeColor(0, 160, 255);
 
-    match msg {
-        Message::Quit => println!("The Quit variant has no data to destructure"),
+    let test = match msg {
+        Message::Quit => {
+            println!("The Quit variant has no data to destructure");
+            1
+        }
         Message::Move { x, y } => {
             println!("Move in the x direction {} and in the y direction {}", x, y);
+            2
         }
-        Message::Write(text) => println!("Text message: {}", text),
+        Message::Write(text) => {
+            println!("Text message: {}", text);
+            3
+        }
         Message::ChangeColor(r, g, b) => {
-            println!("Change the color to red {}, green {}, and blue {}", r, g, b)
+            println!("Change the color to red {}, green {}, and blue {}", r, g, b);
+            4
         }
-    }
+    };
 
-    dbg!(msg);
+    dbg!(test);
 }
