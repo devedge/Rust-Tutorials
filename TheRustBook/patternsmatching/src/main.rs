@@ -1,3 +1,4 @@
+#[derive(Debug)]
 enum Message {
     Quit,
     Move { x: i32, y: i32 },
@@ -18,4 +19,6 @@ fn main() {
             println!("Change the color to red {}, green {}, and blue {}", r, g, b)
         }
     }
+
+    dbg!(msg);
 }
