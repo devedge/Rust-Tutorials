@@ -1,11 +1,12 @@
 fn main() {
-    let mut stack = Vec::new();
+    let x = Some(5);
+    let y = 10;
 
-    stack.push(1);
-    stack.push(2);
-    stack.push(3);
-
-    while let Some(top) = stack.pop() {
-        println!("{}", top);
+    match x {
+        Some(50) => println!("Got 50"),
+        Some(y) => println!("Matched, y = {:?}", y),
+        _ => println!("Default case, x = {:?}", x),
     }
+
+    println!("at the end: x = {:?}, y = {:?}", x, y);
 }
